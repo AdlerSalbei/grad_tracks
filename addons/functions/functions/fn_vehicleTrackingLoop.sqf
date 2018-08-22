@@ -16,7 +16,7 @@ private _handle = [{
    params ["_args", "_handle"];
    _args params ["_vehicle", "_trackType"];
 
-   if (isNull _vehicle) exitWith {
+   if (isNull _vehicle || _vehicle getVariable [QGVAR(disableTracking), false]) exitWith {
       [_handle] call CBA_fnc_removePerFrameHandler;
    };
 

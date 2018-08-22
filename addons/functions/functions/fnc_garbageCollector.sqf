@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+if !(QGVAR(enableTracking) || isServer) exitWith {};
+
 GVAR(tracksList) = [];
 
 [{!(GVAR(tracksList) isEqualTo [])},{

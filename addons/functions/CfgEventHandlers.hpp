@@ -28,20 +28,20 @@ class Extended_Deleted_EventHandlers {
    };
 };
 
-class Extended_Init_EventHandlers {
+class Extended_Engine_EventHandlers {
    class Car {
-      init = QUOTE((if (isServer) then {_this call FUNC(initTrack)});
+      engine = QUOTE((if (isServer) then {_this call FUNC(checkEngineState)});
    };
    class Tracked_APC {
-      init = QUOTE((if (isServer) then {_this call FUNC(initTrack)});
+      engine = QUOTE((if (isServer) then {_this call FUNC(checkEngineState)});
    };
    class Wheeled_APC {
-      init = QUOTE((if (isServer) then {_this call FUNC(initTrack)});
+      engine = QUOTE((if (isServer) then {_this call FUNC(checkEngineState)});
    };
    class Truck {
-      init = QUOTE((if (isServer) then {_this call FUNC(initTrack)});
+      engine = QUOTE((if (isServer) then {_this call FUNC(checkEngineState)});
    };
    class Tank {
-      init = QUOTE((if (isServer) then {_this call FUNC(initTrack)});
+      engine = QUOTE((if (isServer) then {_this call FUNC(checkEngineState)});
    };
 };
