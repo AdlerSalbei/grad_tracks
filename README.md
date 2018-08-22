@@ -1,14 +1,14 @@
 [![Logo](data/logo.png)](https://github.com/gruppe-adler/grad_tracks)
 
 <p align="center">
-    <a href="https://github.com/gruppe-adler/grad_tracks/releases/latest">
-        <img src="https://img.shields.io/github/release/gruppe-adler/grad_tracks.svg?style=flat-square" alt="GRAD Tracks Version">
+    <a href="https://github.com/AdlerSalbei/grad_tracks/releases/latest">
+        <img src="https://img.shields.io/github/release/AdlerSalbei/grad_tracks.svg?style=flat-square" alt="GRAD Tracks Version">
     </a>
-    <a href="https://github.com/gruppe-adler/grad_tracks/issues">
-        <img src="https://img.shields.io/github/issues-raw/gruppe-adler/grad_tracks.svg?style=flat-square&label=Issues" alt="GRAD Tracks Issues">
+    <a href="https://github.com/AdlerSalbei/grad_tracks/issues">
+        <img src="https://img.shields.io/github/issues-raw/AdlerSalbei/grad_tracks.svg?style=flat-square&label=Issues" alt="GRAD Tracks Issues">
     </a>
-    <a href="https://github.com/gruppe-adler/grad_tracks/releases">
-        <img src="https://img.shields.io/github/downloads/gruppe-adler/grad_tracks/total.svg?style=flat-square&label=Downloads" alt="GRAD Tracks Downloads">
+    <a href="https://github.com/AdlerSalbei/grad_tracks/releases">
+        <img src="https://img.shields.io/github/downloads/AdlerSalbei/grad_tracks/total.svg?style=flat-square&label=Downloads" alt="GRAD Tracks Downloads">
     </a>
     <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=1224892496">
         <img src="https://img.shields.io/badge/Steam-Workshop-1B2838.svg?style=flat-square" alt="Steam Workshop">
@@ -19,8 +19,8 @@
     <a href="https://github.com/gruppe-adler/grad_tracks/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/License-GPLv2-red.svg?style=flat-square" alt="GRAD Tracks License">
     </a>
-    <a href="https://travis-ci.org/adler-salbei/grad_tracks">
-        <img src="https://travis-ci.org/adler-salbei/grad_tracks.svg?branch=master" alt="Build status">
+    <a href="https://travis-ci.org/AdlerSalbei/grad_tracks">
+        <img src="https://travis-ci.org/AdlerSalbei/grad_tracks.svg?branch=master" alt="Build status">
     </a>
 </p>
 
