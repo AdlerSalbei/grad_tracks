@@ -19,8 +19,8 @@
     <a href="https://github.com/gruppe-adler/grad_tracks/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/License-GPLv2-red.svg?style=flat-square" alt="GRAD Tracks License">
     </a>
-    <a href="https://travis-ci.org/gruppe-adler/grad_tracks">
-        <img src="https://travis-ci.org/gruppe-adler/grad_tracks.svg?branch=master" alt="Build status">
+    <a href="https://travis-ci.org/adler-salbei/grad_tracks">
+        <img src="https://travis-ci.org/adler-salbei/grad_tracks.svg?branch=master" alt="Build status">
     </a>
 </p>
 

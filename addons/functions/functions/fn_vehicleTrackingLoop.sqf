@@ -35,11 +35,11 @@ private _trackInfo = switch (configName (inheritsFrom (configFile >> "CfgVehicle
 
             private _pos1 = _vehicle modelToWorld _wheel1Pos;
             private _pos2 = _vehicle modelToWorld _wheel2Pos;
-
+/*
             private _track1 = [_trackType, _pos1] call FUNC(createSimpleObj);
             _track1 setObjectTexture [0, ([_track1] call FUNC(getSurfaceTexturePath))];
             [_track1] call FUNC(grassCutter);
-
+*/
             private _track2 = [_trackType, _pos2] call FUNC(createSimpleObj);
             _track2 setObjectTexture [0, ([_track2] call FUNC(getSurfaceTexturePath))];
             [_track2] call FUNC(grassCutter);
