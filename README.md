@@ -1,4 +1,4 @@
-[![Logo](data/logo.png)](https://github.com/gruppe-adler/grad_tracks)
+[![Logo](https://i.imgur.com/1yK2sbF.jpg)]
 
 <p align="center">
     <a href="https://github.com/AdlerSalbei/grad_tracks/releases/latest">
@@ -31,7 +31,7 @@
 
 This mod adds traces to ground based vehicles. Giving the players the ability to trace them.
 
-More images can be found [here](https://github.com/gruppe-adler/grad_tracks#more-images).
+<!-- More images can be found [here](https://github.com/gruppe-adler/grad_tracks#more-images). -->
 
 ## Features
 - Supported on 22 Maps (Vanilla, CUP and more)
@@ -69,10 +69,10 @@ More images can be found [here](https://github.com/gruppe-adler/grad_tracks#more
 ## Downloads
 #### GitHub
 Downloads can be found under [Releases](https://github.com/gruppe-adler/grad_tracks/releases).  
-
+<!--
 #### Steam Workshop
 Subscribe to GRAD Tracks on [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1224892496) and automaticially get the latest releases.
-
+-->
 ## License
 This project is licensed under **GPLv2**.  
 We kindly request to not upload this mod to Armaholic or other mirrors for Arma 3 mods.  
