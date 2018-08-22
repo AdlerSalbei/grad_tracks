@@ -28,18 +28,18 @@ private _trackInfo = switch (configName (inheritsFrom (configFile >> "CfgVehicle
       ) then {
          _vehicle setVariable [QGVAR(lastPos), _pos, false];
 
-         if (!isClass (configFile >> "CfgTexturesBlacklist" >> (surfaceType (position _vehicle))) then {
-            private _wheelAmount = (getNumber(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "numberPhysicalWheels"))/2;
+         if (!isClass (configFile >> "CfgTexturesBlacklist" >> (surfaceType (position _vehicle)))) then {
+            private _wheelAmount = ((getNumber(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "numberPhysicalWheels"))/2);
             private _wheel1Pos = _vehicle selectionPosition [(_trackPrefix + _wheelAmount + "_1"), "Geometry"];
             private _wheel2Pos = _vehicle selectionPosition [(_trackPrefix + _wheelAmount + "_2"), "Geometry"];
 
             private _pos1 = _vehicle modelToWorld _wheel1Pos;
             private _pos2 = _vehicle modelToWorld _wheel2Pos;
-/*
+
             private _track1 = [_trackType, _pos1] call FUNC(createSimpleObj);
             _track1 setObjectTexture [0, ([_track1] call FUNC(getSurfaceTexturePath))];
             [_track1] call FUNC(grassCutter);
-*/
+
             private _track2 = [_trackType, _pos2] call FUNC(createSimpleObj);
             _track2 setObjectTexture [0, ([_track2] call FUNC(getSurfaceTexturePath))];
             [_track2] call FUNC(grassCutter);
