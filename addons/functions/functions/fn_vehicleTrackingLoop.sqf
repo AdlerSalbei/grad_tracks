@@ -22,7 +22,6 @@ private _handle = [{
 
    private _lastPos = _vehicle getVariable [QGVAR(lastPos),[0,0,0]];
    private _pos = getPos _vehicle;
-   private _dir = getDir _vehicle;
 
    if (
          (_lastPos != _pos) && (
@@ -31,7 +30,14 @@ private _handle = [{
       ) then {
          _vehicle setVariable [QGVAR(lastPos), _pos, false];
 
-         if (!isClass (configFile >> "CfgTexturesBlacklist" >> (surfaceType (position _vehicle)))) then {
+         private _surface = (surfaceType (position _vehicle));
+         private _fileNameArr = _surface splitString "";
+         if(_fileNameArr find "#" > -1) then {
+             _fileNameArr deleteAt (_fileNameArr find "#");
+         };
+         _surface = _fileNameArr joinString "";
+
+         if (!isClass (configFile >> "CfgTexturesBlacklist" >> _surface)) then {
             private _wheelAmount = ((getNumber(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "numberPhysicalWheels"))/2);
             private _wheel1Pos = _vehicle selectionPosition [("wheel_" + _wheelAmount + "_1"), "Geometry"];
             private _wheel2Pos = _vehicle selectionPosition [("wheel_" + _wheelAmount + "_2"), "Geometry"];
