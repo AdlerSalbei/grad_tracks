@@ -1,0 +1,3 @@
+class CfgTexturesBlacklist {
+    class Default {};
+};

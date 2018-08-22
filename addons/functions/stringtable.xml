@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="GRAD">
+    <Package name="APOBS">
+        <Key ID="STR_grad_tracks_functions_openApobs">
+            <English>Open APOBS</English>
+            <German>APOBS öffnen</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_closeApobs">
+            <English>Close APOBS</English>
+            <German>APOBS schließen</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_connectApobs">
+            <English>Connect APOBS</English>
+            <German>APOBS verbinden</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_disconnectApobs">
+            <English>Disconnect APOBS</English>
+            <German>APOBS verbindung trennen</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_setUpRocket">
+            <English>Set up rocket</English>
+            <German>Rackete aufstellen</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_dismantleRocket">
+            <English>Dismantle rocket</English>
+            <German>Rackete abbauen</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_connectRocket">
+            <English>Connect rocket</English>
+            <German>Rackete verbinden</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_disconnectRocket">
+            <English>Disconnect rocket</English>
+            <German>Racketen verbindung trennen</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_assembleParachute">
+            <English>Connect rocket</English>
+            <German>Rackete verbinden</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_disassembleParachute">
+            <English>Disconnect rocket</English>
+            <German>Racketen verbindung trennen</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_pullSafetyPin">
+            <English>Pull safety pin</English>
+            <German>Sicherungsstift ziehen</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_returnSafetyPin">
+            <English>Return safety pin</English>
+            <German>Sicherungsstift zurück stecken</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_pullFiringPin">
+            <English>Pull firing pin</English>
+            <German>Zündungsstift ziehen</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_pickUpConnector">
+            <English>Pick up connector</English>
+            <German>Connector aufheben</German>
+        </Key>
+        <Key ID="STR_grad_tracks_functions_disconnectConnector">
+            <English>Disconnect connector</English>
+            <German>Connector trennen</German>
+        </Key>
+    </Package>
+</Project>

@@ -1,0 +1,13 @@
+name = "GRAD TRACKS";
+author = "Gruppe Adler";
+picture = "logo_grad_ca.paa";
+//actionName = "Website";
+//action = "https://github.com/gruppe-adler/grad_tracks/releases";
+description = "Gruppe Adler TRACKS";
+logo = "logo_grad_ca.paa";
+logoOver = "logo_grad_ca.paa";
+tooltip = "Gruppe Adler TRACKS";
+overview = "";
+overviewPicture = "Adler.paa";
+overviewText = "";
+overviewFootnote = "";
