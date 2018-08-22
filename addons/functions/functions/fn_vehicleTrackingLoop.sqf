@@ -4,20 +4,19 @@ if !(isServer) exitWith {};
 
 params ["_vehicle"];
 
-private _trackInfo = switch (configName (inheritsFrom (configFile >> "CfgVehicles" >> (typeOf _vehicle)))) do {
-   case "Car" : {["GRAD_Tracks_TankTracks","wheel_"]};
-   case "Tracked_APC" : {["GRAD_Tracks_TankTracks",""]};
-   case "Wheeled_APC" : {["GRAD_Tracks_TankTracks","wheel_"]};
-   case "Truck" : {["GRAD_Tracks_TankTracks","wheel_"]};
-   case "Tank" : {["GRAD_Tracks_TankTracks","trackL_"]};
+private _trackType = switch (configName (inheritsFrom (configFile >> "CfgVehicles" >> (typeOf _vehicle)))) do {
+   case "Car" : {"GRAD_Tracks_WheelTracks"};
+   case "Tracked_APC" : {"GRAD_Tracks_TrackedTracks"};
+   case "Wheeled_APC" : {"GRAD_Tracks_WheelTracks"};
+   case "Truck" : {"GRAD_Tracks_WheelTracks"};
+   case "Tank" : {"GRAD_Tracks_TrackedTracks"};
 };
 
-[{
+private _handle = [{
    params ["_args", "_handle"];
-   _args params ["_vehicle", "_trackInfo"];
-   _trackInfo params ["_trackType","_trackPrefix"];
+   _args params ["_vehicle", "_trackType"];
 
-   if (isNull _vehicle || _vehicle getVariable [QGVAR(loop), false]) exitWith {
+   if (isNull _vehicle) exitWith {
       [_handle] call CBA_fnc_removePerFrameHandler;
    };
 
@@ -34,8 +33,8 @@ private _trackInfo = switch (configName (inheritsFrom (configFile >> "CfgVehicle
 
          if (!isClass (configFile >> "CfgTexturesBlacklist" >> (surfaceType (position _vehicle)))) then {
             private _wheelAmount = ((getNumber(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "numberPhysicalWheels"))/2);
-            private _wheel1Pos = _vehicle selectionPosition [(_trackPrefix + _wheelAmount + "_1"), "Geometry"];
-            private _wheel2Pos = _vehicle selectionPosition [(_trackPrefix + _wheelAmount + "_2"), "Geometry"];
+            private _wheel1Pos = _vehicle selectionPosition [("wheel_" + _wheelAmount + "_1"), "Geometry"];
+            private _wheel2Pos = _vehicle selectionPosition [("wheel_" + _wheelAmount + "_2"), "Geometry"];
 
             private _pos1 = _vehicle modelToWorld _wheel1Pos;
             private _pos2 = _vehicle modelToWorld _wheel2Pos;
@@ -53,4 +52,6 @@ private _trackInfo = switch (configName (inheritsFrom (configFile >> "CfgVehicle
             GVAR(tracksList) pushBack [_track2, serverTime];
          };
    };
-},0.1,[_vehicle, _trackInfo]] call CBA_fnc_addPerFrameHandler;
+},0.1,[_vehicle, _trackType]] call CBA_fnc_addPerFrameHandler;
+
+_vehicle setVariable [QGVAR(handle), _handle, false];
