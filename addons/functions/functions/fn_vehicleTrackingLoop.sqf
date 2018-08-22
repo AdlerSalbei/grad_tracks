@@ -5,6 +5,10 @@ if !(isServer) exitWith {};
 params ["_vehicle"];
 
 private _trackInfo = switch (configName (inheritsFrom (configFile >> "CfgVehicles" >> (typeOf _vehicle)))) do {
+   case "Car" : {["GRAD_Tracks_TankTracks","wheel_"]};
+   case "Tracked_APC" : {["GRAD_Tracks_TankTracks",""]};
+   case "Wheeled_APC" : {["GRAD_Tracks_TankTracks","wheel_"]};
+   case "Truck" : {["GRAD_Tracks_TankTracks","wheel_"]};
    case "Tank" : {["GRAD_Tracks_TankTracks","trackL_"]};
 };
 
@@ -35,12 +39,13 @@ private _trackInfo = switch (configName (inheritsFrom (configFile >> "CfgVehicle
 
             private _pos1 = _vehicle modelToWorld _wheel1Pos;
             private _pos2 = _vehicle modelToWorld _wheel2Pos;
+            private _dir = getDir _vehicle;
 
-            private _track1 = [_trackType, _pos1] call FUNC(createSimpleObj);
+            private _track1 = [_trackType, _pos1, _dir] call FUNC(createSimpleObj);
             _track1 setObjectTexture [0, ([_track1] call FUNC(getSurfaceTexturePath))];
             [_track1] call FUNC(grassCutter);
 
-            private _track2 = [_trackType, _pos2] call FUNC(createSimpleObj);
+            private _track2 = [_trackType, _pos2, _dir] call FUNC(createSimpleObj);
             _track2 setObjectTexture [0, ([_track2] call FUNC(getSurfaceTexturePath))];
             [_track2] call FUNC(grassCutter);
 

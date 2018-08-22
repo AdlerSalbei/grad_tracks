@@ -1,4 +1,4 @@
-[![Logo](https://i.imgur.com/1yK2sbF.jpg)]
+![Logo](https://i.imgur.com/awJz9qg.jpg)
 
 <p align="center">
     <a href="https://github.com/AdlerSalbei/grad_tracks/releases/latest">
