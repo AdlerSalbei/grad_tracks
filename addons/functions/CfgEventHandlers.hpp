@@ -30,18 +30,18 @@ class Extended_Deleted_EventHandlers {
 
 class Extended_Engine_EventHandlers {
    class Car {
-      engine = QUOTE((if (isServer) then {_this call FUNC(checkEngineState)});
+      engine = QUOTE(if (isServer) then {_this call FUNC(checkEngineState)});
    };
    class Tracked_APC {
-      engine = QUOTE((if (isServer) then {_this call FUNC(checkEngineState)});
+      engine = QUOTE(if (isServer) then {_this call FUNC(checkEngineState)});
    };
    class Wheeled_APC {
-      engine = QUOTE((if (isServer) then {_this call FUNC(checkEngineState)});
+      engine = QUOTE(if (isServer) then {_this call FUNC(checkEngineState)});
    };
    class Truck {
-      engine = QUOTE((if (isServer) then {_this call FUNC(checkEngineState)});
+      engine = QUOTE(if (isServer) then {_this call FUNC(checkEngineState)});
    };
    class Tank {
-      engine = QUOTE((if (isServer) then {_this call FUNC(checkEngineState)});
+      engine = QUOTE(if (isServer) then {_this call FUNC(checkEngineState)});
    };
 };
